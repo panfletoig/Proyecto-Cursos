@@ -37,14 +37,14 @@
 			// 
 			// textBox1
 			// 
-			textBox1.Location = new Point(91, 78);
+			textBox1.Location = new Point(84, 78);
 			textBox1.Name = "textBox1";
 			textBox1.Size = new Size(152, 23);
 			textBox1.TabIndex = 0;
 			// 
 			// textBox2
 			// 
-			textBox2.Location = new Point(91, 145);
+			textBox2.Location = new Point(84, 145);
 			textBox2.Name = "textBox2";
 			textBox2.Size = new Size(152, 23);
 			textBox2.TabIndex = 1;
@@ -52,7 +52,7 @@
 			// label_user
 			// 
 			label_user.AutoSize = true;
-			label_user.Location = new Point(91, 60);
+			label_user.Location = new Point(84, 60);
 			label_user.Name = "label_user";
 			label_user.Size = new Size(50, 15);
 			label_user.TabIndex = 2;
@@ -61,7 +61,7 @@
 			// label_pass
 			// 
 			label_pass.AutoSize = true;
-			label_pass.Location = new Point(91, 127);
+			label_pass.Location = new Point(84, 127);
 			label_pass.Name = "label_pass";
 			label_pass.Size = new Size(70, 15);
 			label_pass.TabIndex = 3;
@@ -69,7 +69,7 @@
 			// 
 			// button_ingreso
 			// 
-			button_ingreso.Location = new Point(91, 217);
+			button_ingreso.Location = new Point(84, 217);
 			button_ingreso.Name = "button_ingreso";
 			button_ingreso.Size = new Size(152, 23);
 			button_ingreso.TabIndex = 4;
