@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using ClassLibrary;
+
 namespace ProyectoCursos.Administrador
 {
 	public partial class Admin_Main : Form
@@ -16,5 +18,6 @@ namespace ProyectoCursos.Administrador
 		{
 			InitializeComponent();
 		}
+
 	}
 }
