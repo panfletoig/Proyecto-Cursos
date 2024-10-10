@@ -19,5 +19,9 @@ namespace ProyectoCursos.Administrador
 			InitializeComponent();
 		}
 
+		private void Admin_Main_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
