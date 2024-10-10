@@ -236,6 +236,7 @@
 			btn_nav_2.Text = "         Crear Curso";
 			btn_nav_2.TextAlign = ContentAlignment.MiddleLeft;
 			btn_nav_2.UseVisualStyleBackColor = false;
+			btn_nav_2.Click += btn_nav_2_Click;
 			btn_nav_2.MouseEnter += btn_nav_2_MouseEnter;
 			btn_nav_2.MouseLeave += btn_nav_2_MouseLeave;
 			// 
@@ -266,6 +267,7 @@
 			btn_nav_3.Text = "         Asignar Docente";
 			btn_nav_3.TextAlign = ContentAlignment.MiddleLeft;
 			btn_nav_3.UseVisualStyleBackColor = false;
+			btn_nav_3.Click += btn_nav_3_Click;
 			btn_nav_3.MouseEnter += btn_nav_3_MouseEnter;
 			btn_nav_3.MouseLeave += btn_nav_3_MouseLeave;
 			// 
@@ -296,6 +298,7 @@
 			btn_nav_4.Text = "         Desbloquear Cuenta";
 			btn_nav_4.TextAlign = ContentAlignment.MiddleLeft;
 			btn_nav_4.UseVisualStyleBackColor = false;
+			btn_nav_4.Click += btn_nav_4_Click;
 			btn_nav_4.MouseEnter += btn_nav_4_MouseEnter;
 			btn_nav_4.MouseLeave += btn_nav_4_MouseLeave;
 			// 
@@ -326,6 +329,7 @@
 			btn_nav_5.Text = "         Enviar Información";
 			btn_nav_5.TextAlign = ContentAlignment.MiddleLeft;
 			btn_nav_5.UseVisualStyleBackColor = false;
+			btn_nav_5.Click += btn_nav_5_Click;
 			btn_nav_5.MouseEnter += btn_nav_5_MouseEnter;
 			btn_nav_5.MouseLeave += btn_nav_5_MouseLeave;
 			// 

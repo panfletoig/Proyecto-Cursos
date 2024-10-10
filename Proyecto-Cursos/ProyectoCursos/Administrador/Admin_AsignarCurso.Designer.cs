@@ -1,6 +1,6 @@
 ﻿namespace ProyectoCursos.Administrador
 {
-	partial class Admin_CourseCreate
+	partial class Admin_AsignarCurso
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -32,14 +32,14 @@
 			panel_Container = new Panel();
 			panel5 = new Panel();
 			panel1 = new Panel();
-			textBox1 = new TextBox();
-			label1 = new Label();
-			tb_nombre = new TextBox();
-			label_Nombre = new Label();
+			btn_Asignar = new Button();
+			label_docentes = new Label();
+			label_cursos = new Label();
 			panel2 = new Panel();
 			label_showName = new Label();
 			label_user = new Label();
-			btn_crearCurso = new Button();
+			cB_cursos = new ComboBox();
+			cB_docentes = new ComboBox();
 			panel_Container.SuspendLayout();
 			panel5.SuspendLayout();
 			panel1.SuspendLayout();
@@ -53,8 +53,8 @@
 			label_crearUsuario.Location = new Point(0, 0);
 			label_crearUsuario.Name = "label_crearUsuario";
 			label_crearUsuario.Size = new Size(800, 71);
-			label_crearUsuario.TabIndex = 1;
-			label_crearUsuario.Text = "Crear Curso";
+			label_crearUsuario.TabIndex = 2;
+			label_crearUsuario.Text = "Asignar Curso";
 			label_crearUsuario.TextAlign = ContentAlignment.MiddleCenter;
 			// 
 			// panel_Container
@@ -65,7 +65,7 @@
 			panel_Container.Location = new Point(0, 89);
 			panel_Container.Name = "panel_Container";
 			panel_Container.Size = new Size(800, 311);
-			panel_Container.TabIndex = 5;
+			panel_Container.TabIndex = 6;
 			// 
 			// panel5
 			// 
@@ -78,50 +78,44 @@
 			// 
 			// panel1
 			// 
-			panel1.Controls.Add(btn_crearCurso);
-			panel1.Controls.Add(textBox1);
-			panel1.Controls.Add(label1);
-			panel1.Controls.Add(tb_nombre);
-			panel1.Controls.Add(label_Nombre);
+			panel1.Controls.Add(cB_docentes);
+			panel1.Controls.Add(cB_cursos);
+			panel1.Controls.Add(btn_Asignar);
+			panel1.Controls.Add(label_docentes);
+			panel1.Controls.Add(label_cursos);
 			panel1.Location = new Point(12, 3);
 			panel1.Name = "panel1";
 			panel1.Size = new Size(284, 296);
 			panel1.TabIndex = 2;
 			// 
-			// textBox1
+			// btn_Asignar
 			// 
-			textBox1.Location = new Point(3, 90);
-			textBox1.Multiline = true;
-			textBox1.Name = "textBox1";
-			textBox1.Size = new Size(278, 143);
-			textBox1.TabIndex = 4;
+			btn_Asignar.Location = new Point(181, 270);
+			btn_Asignar.Name = "btn_Asignar";
+			btn_Asignar.Size = new Size(100, 23);
+			btn_Asignar.TabIndex = 3;
+			btn_Asignar.Text = "Asignar curso";
+			btn_Asignar.UseVisualStyleBackColor = true;
 			// 
-			// label1
+			// label_docentes
 			// 
-			label1.AutoSize = true;
-			label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-			label1.Location = new Point(3, 70);
-			label1.Name = "label1";
-			label1.Size = new Size(84, 17);
-			label1.TabIndex = 3;
-			label1.Text = "Descripción:";
+			label_docentes.AutoSize = true;
+			label_docentes.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			label_docentes.Location = new Point(3, 70);
+			label_docentes.Name = "label_docentes";
+			label_docentes.Size = new Size(144, 17);
+			label_docentes.TabIndex = 3;
+			label_docentes.Text = "Docentes disponibles:";
 			// 
-			// tb_nombre
+			// label_cursos
 			// 
-			tb_nombre.Location = new Point(3, 28);
-			tb_nombre.Name = "tb_nombre";
-			tb_nombre.Size = new Size(278, 23);
-			tb_nombre.TabIndex = 2;
-			// 
-			// label_Nombre
-			// 
-			label_Nombre.AutoSize = true;
-			label_Nombre.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-			label_Nombre.Location = new Point(3, 10);
-			label_Nombre.Name = "label_Nombre";
-			label_Nombre.Size = new Size(122, 17);
-			label_Nombre.TabIndex = 1;
-			label_Nombre.Text = "Nombre del curso:";
+			label_cursos.AutoSize = true;
+			label_cursos.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+			label_cursos.Location = new Point(3, 10);
+			label_cursos.Name = "label_cursos";
+			label_cursos.Size = new Size(139, 17);
+			label_cursos.TabIndex = 1;
+			label_cursos.Text = "Cursos no asignados:";
 			// 
 			// panel2
 			// 
@@ -142,7 +136,7 @@
 			label_showName.RightToLeft = RightToLeft.No;
 			label_showName.Size = new Size(271, 17);
 			label_showName.TabIndex = 4;
-			label_showName.Text = "El curso recien creado se mostrara aqui";
+			label_showName.Text = "La asignación se mostrara aqui";
 			// 
 			// label_user
 			// 
@@ -150,20 +144,27 @@
 			label_user.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
 			label_user.Location = new Point(3, 10);
 			label_user.Name = "label_user";
-			label_user.Size = new Size(62, 17);
+			label_user.Size = new Size(80, 17);
 			label_user.TabIndex = 2;
-			label_user.Text = "Nombre:";
+			label_user.Text = "Asignacion:";
 			// 
-			// btn_crearCurso
+			// cB_cursos
 			// 
-			btn_crearCurso.Location = new Point(181, 270);
-			btn_crearCurso.Name = "btn_crearCurso";
-			btn_crearCurso.Size = new Size(100, 23);
-			btn_crearCurso.TabIndex = 3;
-			btn_crearCurso.Text = "Crear Curso";
-			btn_crearCurso.UseVisualStyleBackColor = true;
+			cB_cursos.FormattingEnabled = true;
+			cB_cursos.Location = new Point(3, 28);
+			cB_cursos.Name = "cB_cursos";
+			cB_cursos.Size = new Size(278, 23);
+			cB_cursos.TabIndex = 9;
 			// 
-			// Admin_CourseCreate
+			// cB_docentes
+			// 
+			cB_docentes.FormattingEnabled = true;
+			cB_docentes.Location = new Point(3, 90);
+			cB_docentes.Name = "cB_docentes";
+			cB_docentes.Size = new Size(278, 23);
+			cB_docentes.TabIndex = 10;
+			// 
+			// Admin_AsignarCurso
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
@@ -171,9 +172,9 @@
 			Controls.Add(panel_Container);
 			Controls.Add(label_crearUsuario);
 			FormBorderStyle = FormBorderStyle.None;
-			Name = "Admin_CourseCreate";
-			Text = "Admin_CourseCreate";
-			Load += Admin_CourseCreate_Load;
+			Name = "Admin_AsignarCurso";
+			Text = "Admin_AsignarCurso";
+			Load += Admin_AsignarCurso_Load;
 			panel_Container.ResumeLayout(false);
 			panel_Container.PerformLayout();
 			panel5.ResumeLayout(false);
@@ -190,13 +191,13 @@
 		private Panel panel_Container;
 		private Panel panel5;
 		private Panel panel1;
-		private TextBox tb_nombre;
-		private Label label_Nombre;
+		private Button btn_Asignar;
+		private Label label_docentes;
+		private Label label_cursos;
 		private Panel panel2;
 		private Label label_showName;
 		private Label label_user;
-		private TextBox textBox1;
-		private Label label1;
-		private Button btn_crearCurso;
+		private ComboBox cB_docentes;
+		private ComboBox cB_cursos;
 	}
 }

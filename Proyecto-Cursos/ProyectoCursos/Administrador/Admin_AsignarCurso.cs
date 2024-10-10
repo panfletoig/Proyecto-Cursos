@@ -10,15 +10,14 @@ using System.Windows.Forms;
 
 namespace ProyectoCursos.Administrador
 {
-	public partial class Admin_CourseCreate : Form
+	public partial class Admin_AsignarCurso : Form
 	{
-		public Admin_CourseCreate()
+		public Admin_AsignarCurso()
 		{
 			InitializeComponent();
-			this.ControlBox = false;
 		}
 
-		private void Admin_CourseCreate_Load(object sender, EventArgs e)
+		private void Admin_AsignarCurso_Load(object sender, EventArgs e)
 		{
 			this.ControlBox = false;
 		}

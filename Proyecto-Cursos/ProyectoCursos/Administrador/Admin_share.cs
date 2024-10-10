@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoCursos.Administrador
 {
-	public partial class Admin_CourseCreate : Form
+	public partial class Admin_share : Form
 	{
-		public Admin_CourseCreate()
+		public Admin_share()
 		{
 			InitializeComponent();
-			this.ControlBox = false;
-		}
-
-		private void Admin_CourseCreate_Load(object sender, EventArgs e)
-		{
-			this.ControlBox = false;
 		}
 	}
 }

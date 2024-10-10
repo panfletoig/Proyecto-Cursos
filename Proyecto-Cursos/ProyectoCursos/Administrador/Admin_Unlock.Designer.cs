@@ -1,6 +1,6 @@
 ﻿namespace ProyectoCursos.Administrador
 {
-	partial class Admin_UserCreate
+	partial class Admin_Unlock
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -29,20 +29,12 @@
 		private void InitializeComponent()
 		{
 			label_crearUsuario = new Label();
-			panel3 = new Panel();
 			panel_Container = new Panel();
 			panel5 = new Panel();
-			panel4 = new Panel();
-			cB_especialidad = new ComboBox();
-			label_docente = new Label();
-			btn_create = new Button();
-			btn_administrativo = new Button();
-			btn_docente = new Button();
-			btn_alumno = new Button();
-			label_Options = new Label();
 			panel1 = new Panel();
 			tb_nombre = new TextBox();
 			label_Nombre = new Label();
+			btn_alumno = new Button();
 			panel2 = new Panel();
 			panel6 = new Panel();
 			btn_copy = new Button();
@@ -50,10 +42,8 @@
 			label_ShowUser = new Label();
 			label_pass = new Label();
 			label_user = new Label();
-			panel3.SuspendLayout();
 			panel_Container.SuspendLayout();
 			panel5.SuspendLayout();
-			panel4.SuspendLayout();
 			panel1.SuspendLayout();
 			panel2.SuspendLayout();
 			SuspendLayout();
@@ -64,19 +54,10 @@
 			label_crearUsuario.Font = new Font("Segoe UI Black", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
 			label_crearUsuario.Location = new Point(0, 0);
 			label_crearUsuario.Name = "label_crearUsuario";
-			label_crearUsuario.Size = new Size(958, 71);
-			label_crearUsuario.TabIndex = 0;
-			label_crearUsuario.Text = "Crear Usuario";
+			label_crearUsuario.Size = new Size(800, 71);
+			label_crearUsuario.TabIndex = 1;
+			label_crearUsuario.Text = "Desbloquear Usuario";
 			label_crearUsuario.TextAlign = ContentAlignment.MiddleCenter;
-			// 
-			// panel3
-			// 
-			panel3.Controls.Add(label_crearUsuario);
-			panel3.Dock = DockStyle.Top;
-			panel3.Location = new Point(0, 0);
-			panel3.Name = "panel3";
-			panel3.Size = new Size(958, 71);
-			panel3.TabIndex = 5;
 			// 
 			// panel_Container
 			// 
@@ -85,12 +66,11 @@
 			panel_Container.Dock = DockStyle.Bottom;
 			panel_Container.Location = new Point(0, 89);
 			panel_Container.Name = "panel_Container";
-			panel_Container.Size = new Size(958, 311);
-			panel_Container.TabIndex = 6;
+			panel_Container.Size = new Size(800, 311);
+			panel_Container.TabIndex = 7;
 			// 
 			// panel5
 			// 
-			panel5.Controls.Add(panel4);
 			panel5.Controls.Add(panel1);
 			panel5.Dock = DockStyle.Left;
 			panel5.Location = new Point(0, 0);
@@ -98,94 +78,14 @@
 			panel5.Size = new Size(302, 311);
 			panel5.TabIndex = 8;
 			// 
-			// panel4
-			// 
-			panel4.Controls.Add(cB_especialidad);
-			panel4.Controls.Add(label_docente);
-			panel4.Controls.Add(btn_create);
-			panel4.Controls.Add(btn_administrativo);
-			panel4.Controls.Add(btn_docente);
-			panel4.Controls.Add(btn_alumno);
-			panel4.Controls.Add(label_Options);
-			panel4.Location = new Point(12, 56);
-			panel4.Name = "panel4";
-			panel4.Size = new Size(284, 243);
-			panel4.TabIndex = 7;
-			// 
-			// cB_especialidad
-			// 
-			cB_especialidad.FormattingEnabled = true;
-			cB_especialidad.Location = new Point(3, 130);
-			cB_especialidad.Name = "cB_especialidad";
-			cB_especialidad.Size = new Size(278, 23);
-			cB_especialidad.TabIndex = 10;
-			// 
-			// label_docente
-			// 
-			label_docente.AutoSize = true;
-			label_docente.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-			label_docente.Location = new Point(3, 110);
-			label_docente.Name = "label_docente";
-			label_docente.Size = new Size(164, 17);
-			label_docente.TabIndex = 7;
-			label_docente.Text = "Especialidad del docente:";
-			// 
-			// btn_create
-			// 
-			btn_create.Location = new Point(172, 203);
-			btn_create.Name = "btn_create";
-			btn_create.Size = new Size(109, 23);
-			btn_create.TabIndex = 6;
-			btn_create.Text = "Crear";
-			btn_create.UseVisualStyleBackColor = true;
-			// 
-			// btn_administrativo
-			// 
-			btn_administrativo.Location = new Point(3, 84);
-			btn_administrativo.Name = "btn_administrativo";
-			btn_administrativo.Size = new Size(278, 23);
-			btn_administrativo.TabIndex = 5;
-			btn_administrativo.Text = "Administrador";
-			btn_administrativo.UseVisualStyleBackColor = true;
-			btn_administrativo.Click += btn_administrativo_Click;
-			// 
-			// btn_docente
-			// 
-			btn_docente.Location = new Point(3, 55);
-			btn_docente.Name = "btn_docente";
-			btn_docente.Size = new Size(278, 23);
-			btn_docente.TabIndex = 4;
-			btn_docente.Text = "Docente";
-			btn_docente.UseVisualStyleBackColor = true;
-			btn_docente.Click += btn_docente_Click;
-			// 
-			// btn_alumno
-			// 
-			btn_alumno.Location = new Point(3, 26);
-			btn_alumno.Name = "btn_alumno";
-			btn_alumno.Size = new Size(278, 23);
-			btn_alumno.TabIndex = 3;
-			btn_alumno.Text = "Alumno";
-			btn_alumno.UseVisualStyleBackColor = true;
-			btn_alumno.Click += btn_alumno_Click;
-			// 
-			// label_Options
-			// 
-			label_Options.AutoSize = true;
-			label_Options.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-			label_Options.Location = new Point(3, 6);
-			label_Options.Name = "label_Options";
-			label_Options.Size = new Size(189, 17);
-			label_Options.TabIndex = 2;
-			label_Options.Text = "Seleccione el tipo de usuario:\r\n";
-			// 
 			// panel1
 			// 
 			panel1.Controls.Add(tb_nombre);
 			panel1.Controls.Add(label_Nombre);
+			panel1.Controls.Add(btn_alumno);
 			panel1.Location = new Point(12, 3);
 			panel1.Name = "panel1";
-			panel1.Size = new Size(284, 61);
+			panel1.Size = new Size(284, 296);
 			panel1.TabIndex = 2;
 			// 
 			// tb_nombre
@@ -201,9 +101,18 @@
 			label_Nombre.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
 			label_Nombre.Location = new Point(3, 10);
 			label_Nombre.Name = "label_Nombre";
-			label_Nombre.Size = new Size(62, 17);
+			label_Nombre.Size = new Size(59, 17);
 			label_Nombre.TabIndex = 1;
-			label_Nombre.Text = "Nombre:";
+			label_Nombre.Text = "Usuario:";
+			// 
+			// btn_alumno
+			// 
+			btn_alumno.Location = new Point(131, 143);
+			btn_alumno.Name = "btn_alumno";
+			btn_alumno.Size = new Size(150, 23);
+			btn_alumno.TabIndex = 3;
+			btn_alumno.Text = "Reiniciar credenciales";
+			btn_alumno.UseVisualStyleBackColor = true;
 			// 
 			// panel2
 			// 
@@ -215,7 +124,7 @@
 			panel2.Controls.Add(label_pass);
 			panel2.Controls.Add(label_user);
 			panel2.Dock = DockStyle.Right;
-			panel2.Location = new Point(678, 0);
+			panel2.Location = new Point(520, 0);
 			panel2.Name = "panel2";
 			panel2.Size = new Size(280, 311);
 			panel2.TabIndex = 3;
@@ -276,22 +185,19 @@
 			label_user.TabIndex = 2;
 			label_user.Text = "Usuario:";
 			// 
-			// Admin_UserCreate
+			// Admin_Unlock
 			// 
 			AutoScaleDimensions = new SizeF(7F, 15F);
 			AutoScaleMode = AutoScaleMode.Font;
-			ClientSize = new Size(958, 400);
+			ClientSize = new Size(800, 400);
 			Controls.Add(panel_Container);
-			Controls.Add(panel3);
+			Controls.Add(label_crearUsuario);
 			FormBorderStyle = FormBorderStyle.None;
-			Name = "Admin_UserCreate";
-			Text = "Admin_UserCreate";
-			panel3.ResumeLayout(false);
+			Name = "Admin_Unlock";
+			Text = "Admin_Unlock";
 			panel_Container.ResumeLayout(false);
 			panel_Container.PerformLayout();
 			panel5.ResumeLayout(false);
-			panel4.ResumeLayout(false);
-			panel4.PerformLayout();
 			panel1.ResumeLayout(false);
 			panel1.PerformLayout();
 			panel2.ResumeLayout(false);
@@ -302,14 +208,9 @@
 		#endregion
 
 		private Label label_crearUsuario;
-		private Panel panel3;
 		private Panel panel_Container;
 		private Panel panel5;
-		private Panel panel4;
-		private Button btn_administrativo;
-		private Button btn_docente;
 		private Button btn_alumno;
-		private Label label_Options;
 		private Panel panel1;
 		private TextBox tb_nombre;
 		private Label label_Nombre;
@@ -320,8 +221,5 @@
 		private Label label_ShowUser;
 		private Label label_pass;
 		private Label label_user;
-		private Label label_docente;
-		private Button btn_create;
-		private ComboBox cB_especialidad;
 	}
 }

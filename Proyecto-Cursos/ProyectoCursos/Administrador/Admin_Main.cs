@@ -78,11 +78,15 @@ namespace ProyectoCursos.Administrador
 		{
 			FormsInstances = [
 				new Admin_UserCreate(){ MdiParent = this, Enabled = false, Visible = false, FormBorderStyle = FormBorderStyle.None},
-				];
+				new Admin_CourseCreate(){ MdiParent = this, Enabled = false, Visible = false, FormBorderStyle = FormBorderStyle.None},
+				new Admin_AsignarCurso(){ MdiParent = this, Enabled = false, Visible = false, FormBorderStyle = FormBorderStyle.None},
+				new Admin_Unlock(){ MdiParent = this, Enabled = false, Visible = false, FormBorderStyle = FormBorderStyle.None},
+				new Admin_share(){ MdiParent = this, Enabled = false, Visible = false, FormBorderStyle = FormBorderStyle.None},
+			];
 			ActualFormIndex = 0;
 			FormEnableAndDisable(ActualFormIndex);
 
-			foreach(Form f in FormsInstances)
+			foreach (Form f in FormsInstances)
 			{
 				f.Dock = DockStyle.Fill;
 			}
@@ -133,22 +137,37 @@ namespace ProyectoCursos.Administrador
 		{
 			FormEnableAndDisable(0);
 		}
+		private void btn_nav_2_Click(object sender, EventArgs e)
+		{
+			FormEnableAndDisable(1);
+		}
+		private void btn_nav_3_Click(object sender, EventArgs e)
+		{
+			FormEnableAndDisable(2);
+		}
+		private void btn_nav_4_Click(object sender, EventArgs e)
+		{
+			FormEnableAndDisable(3);
+		}
+		private void btn_nav_5_Click(object sender, EventArgs e)
+		{
+			FormEnableAndDisable(4);
+		}
 
 		private void FormEnableAndDisable(int indexToEnable)
 		{
 			bool disable = false;
 			for (int i = 0; i < FormsInstances.Length; i++)
 			{
-				if(i != indexToEnable)
+				if (i != indexToEnable)
 				{
 					FormsInstances[i].Enabled = disable;
 					FormsInstances[i].Visible = disable;
+					continue;
 				}
-				else
-				{
-					FormsInstances[i].Enabled = !disable;
-					FormsInstances[i].Visible = !disable;
-				}
+
+				FormsInstances[i].Enabled = !disable;
+				FormsInstances[i].Visible = !disable;
 			}
 		}
 
