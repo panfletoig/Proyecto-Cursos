@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProyectoCursos.Alumno
 {
-	public partial class Alumno_Main : Form
-	{
-		public Alumno_Main()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class Alumno_Main : Form
+    {
+        public Alumno_Main()
+        {
+            InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
