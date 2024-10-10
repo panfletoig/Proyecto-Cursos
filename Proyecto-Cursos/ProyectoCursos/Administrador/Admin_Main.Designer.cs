@@ -74,6 +74,9 @@
 			panel_header.Name = "panel_header";
 			panel_header.Size = new Size(800, 37);
 			panel_header.TabIndex = 1;
+			panel_header.MouseDown += panel_header_MouseDown;
+			panel_header.MouseMove += panel_header_MouseMove;
+			panel_header.MouseUp += panel_header_MouseUp;
 			// 
 			// flowLayoutPanel1
 			// 
