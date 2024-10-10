@@ -32,6 +32,7 @@
             lblInformacionDeCurso = new Label();
             lblNoAsignado = new Label();
             lblBusquedaDeCursos = new Label();
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
             // lblVisualizacionDeCursos
@@ -70,11 +71,21 @@
             lblBusquedaDeCursos.TabIndex = 3;
             lblBusquedaDeCursos.Text = "Búsqueda de Cursos";
             // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(12, 27);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(310, 154);
+            listBox1.TabIndex = 4;
+            // 
             // Alumno_Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(835, 351);
+            Controls.Add(listBox1);
             Controls.Add(lblBusquedaDeCursos);
             Controls.Add(lblNoAsignado);
             Controls.Add(lblInformacionDeCurso);
@@ -91,5 +102,6 @@
         private Label lblInformacionDeCurso;
         private Label lblNoAsignado;
         private Label lblBusquedaDeCursos;
+        private ListBox listBox1;
     }
 }
